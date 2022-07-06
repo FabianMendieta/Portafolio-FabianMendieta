@@ -1,3 +1,98 @@
-.body{
-    
+:root{
+    --color-de-fondo: #F5F5F5;
+    --color-de-link: #000;
+    --color-de-fondo2: #EAF2FD;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-de-fondo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/* Seccion cabecera */
+Section.cabecera{
+    margin:0 152px;
+    padding: 32px 0;
+}
+
+.cabecera__container{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;  
+}
+.logo__title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+.menu__list{
+    display: flex;
+    width: 100vh;
+    justify-content: space-around;
+}
+.menu__list__item{
+    font-size: 16px; 
+}
+
+.menu__list__item:last-child{
+    font-weight: bold;
+}
+
+/* Seccion banner */
+
+Section.banner{
+    margin:32px 152px 0 152px;
+}
+.banner__container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.banner__informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner__title{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.banner__description{
+    font-size: 22px;
+    line-height: 26px;
+}
+.banner__links{
+    display: flex;
+    gap: 32px;
+}
+
+/* Seccion Sobre mi */
+
+Section.sobreMi{
+    background-color: var(--color-de-fondo2);
+}
+.sobreMi__container{
+    margin:64px 152px;
+    padding: 64px 0;
+}
+.sobreMi__title{
+    font-size: 32px;
+}
+.sobreMi__description{
+    font-size: 16px;
+    padding-right: 385px;
 }
